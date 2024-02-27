@@ -10,17 +10,17 @@ import {Routes,Route} from "react-router-dom";
 function App() {
   return (
   
-    <div className='flex items-center justify-center max-w-screen-xl mx-auto flex-col  '>  
+     
        
        <Routes>
-      <Route path='/' element={<Signup />} />
+      <Route path='/first_react' element={<Signup />} />
       <Route path='/signin' element={<Signin />} />
       <Route path='/details' element={<Details />} />
       <Route path='*' element={<Errror />} />
     </Routes>
     
 
-    </div>
+    
   
   );
 }

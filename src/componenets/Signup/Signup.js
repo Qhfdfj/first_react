@@ -69,29 +69,29 @@ function Signup() {
     }
 
     return (
-        <div className='flex items-center justify-center max-w-screen-xl mx-auto'>
-            <div className='p-4 mt-20 max-w-xs mx-2 bg-gray-300 rounded-lg shadow-md'>
+        <div className='flex items-center justify-center max-w-screen-xl mx-auto back'>
+            <div className='p-4 mt-1 max-w-xs mx-2 bg-gray-300 rounded-lg shadow-2xl'>
                 <h1 className=' text-center'>Sign Up</h1>
                 <div>
-                    <input className='w-60 p-2 border border-gray-300 mt-2 rounded-md text-sm' type="text" name="name" placeholder="user name" onChange={getData}></input>
                 </div>
+                <input className=' w-64 p-2 ml-2 border border-gray-300 mt-2 rounded-md text-sm' type="text" name="name" placeholder="user name" onChange={getData}></input>
                 <div className=''>
-                    <input className='w-60 p-2 border border-gray-300 mt-2 rounded-md text-sm' type="password" name="password" placeholder="Password" onChange={getData}></input>
+                    <input className='w-64 p-2 ml-2 border border-gray-300 mt-2 rounded-md text-sm' type="password" name="password" placeholder="Password" onChange={getData}></input>
                 </div>
                 <div>
-                    <input className='w-60 p-2 border border-gray-300 mt-2 rounded-md text-sm' type="email" name="email" placeholder="Email" onChange={getData}></input>
+                    <input className='w-64 p-2 ml-2 border border-gray-300 mt-2 rounded-md text-sm' type="email" name="email" placeholder="Email" onChange={getData}></input>
                 </div>
                 <div>
-                    <input className='w-60 p-2 border border-gray-300 mt-2 rounded-md text-sm' type="date" name="date" placeholder="Date" onChange={getData}></input>
+                    <input className='w-64 p-2 ml-2 border border-gray-300 mt-2 rounded-md text-sm' type="date" name="date" placeholder="Date" onChange={getData}></input>
                 </div>
-                <div>
-                <button className='py-2 px-4 text-white max-w-xs border border-white shadow-md rounded-md bg-red-500 transition duration-500 ease-in-out hover:bg-red-600 focus:outline-none focus:ring focus:border-blue-300 mt-2 ' type='submit' onClick={addData} >
-                    Submit
-                </button>
-                <p>Already Have an Account <span><NavLink className=' px-4 text-black  border border-white shadow-md rounded-md bg-red-500 transition duration-500 ease-in-out hover:bg-blue-200 focus:outline-none focus:ring focus:border-blue-800 mt-2' to='/signin'> Signin</NavLink></span></p>
-                </div>
+                
+                    <button className='py-2 px-4 ml-20 text-white max-w-xs border border-white shadow-md rounded-md bg-red-500 transition duration-500 ease-in-out hover:bg-red-600 focus:outline-none focus:ring focus:border-blue-300 mt-2 ' type='submit' onClick={addData} >
+                        Submit
+                    </button>
+                    <p>Already Have an Account <span><NavLink className='  px-11 text-black  border border-white shadow-md rounded-md bg-red-500 transition duration-500 ease-in-out hover:bg-blue-200 focus:outline-none focus:ring focus:border-blue-800 mt-2' to='/signin'> Signin</NavLink></span></p>
+                
             </div>
-</div>        
+        </div>
 
     )
 }
