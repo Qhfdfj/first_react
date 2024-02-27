@@ -41,7 +41,7 @@ const Details = () => {
 
   const userlogout = () => {
     localStorage.removeItem("user_login")
-    history("/");
+    history("/first_react");
   }
 
   useEffect(() => {
